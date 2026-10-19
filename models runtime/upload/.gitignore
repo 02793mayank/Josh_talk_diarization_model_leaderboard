@@ -1,0 +1,119 @@
+# ==============================================================================
+# .gitignore — Josh Talks Speaker Diarization Benchmark & Scoring Project
+# Optimized for minimal repository size: excludes virtual environments, large
+# model checkpoints, and binary caches while preserving code, annotations, audio,
+# CSV metrics, reports, and configurations.
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Virtual Environments (Prevents uploading gigabytes of installed packages)
+# ------------------------------------------------------------------------------
+.venv/
+*/.venv/
+venv/
+*/venv/
+env/
+*/env/
+ENV/
+env.bak/
+venv.bak/
+
+# ------------------------------------------------------------------------------
+# 2. Large Model Weights, Checkpoints & Pretrained Caches
+# ------------------------------------------------------------------------------
+# Heavy neural network checkpoints and archives (e.g. PyTorch, NeMo, ONNX)
+*.pt
+*.pth
+*.bin
+*.nemo
+*.onnx
+*.ckpt
+*.h5
+*.hdf5
+*.safetensors
+*.pb
+*.tflite
+*.joblib
+*.pkl
+*.pickle
+
+# Model cache & checkpoint directories
+checkpoints/
+*/checkpoints/
+weights/
+*/weights/
+models/
+*/models/
+.cache/
+*/.cache/
+torch_cache/
+huggingface_cache/
+nemo_cache/
+
+# ------------------------------------------------------------------------------
+# 3. Python Bytecode, Caches & Test Artifacts
+# ------------------------------------------------------------------------------
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+
+# ------------------------------------------------------------------------------
+# 4. Logs, Debug Dumps & Temporary Files
+# ------------------------------------------------------------------------------
+*.log
+*/call_input01_debug.log
+*/call_input02_debug.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+scratch/
+*/scratch/
+
+# ------------------------------------------------------------------------------
+# 5. OS & IDE Metadata
+# ------------------------------------------------------------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ------------------------------------------------------------------------------
+# 6. Explicit Guarantees (Keep required code, annotations, metrics & audio)
+# ------------------------------------------------------------------------------
+# Python source code
+!*.py
+
+# Ground truth & hypothesis speaker diarization annotations
+!*.rttm
+
+# Audio datasets (WAV, SPH, FLAC)
+!*.wav
+!*.sph
+!*.flac
+
+# Tabular metrics and final reports
+!*.csv
+!*.md
+
+# Configurations and manifests needed for reproduction
+!*.yaml
+!*.yml
+!*.json
+!requirements.txt

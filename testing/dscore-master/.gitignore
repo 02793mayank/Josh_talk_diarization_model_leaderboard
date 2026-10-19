@@ -1,0 +1,102 @@
+*~
+*.pyc
+
+
+# ==========================================
+# Python virtual environments
+# ==========================================
+.venv/
+.venv-1/
+**/.venv/
+**/.venv-1/
+venv/
+env/
+ENV/
+
+# ==========================================
+# Python cache and compiled files
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ==========================================
+# IDE and operating system files
+# ==========================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# Secrets and local environment configuration
+# ==========================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ==========================================
+# Large model files and downloaded checkpoints
+# ==========================================
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.safetensors
+*.bin
+*.h5
+*.pb
+*.tflite
+*.model
+
+# ==========================================
+# Audio files: KEEP
+# ==========================================
+# Do not ignore audio extensions if you want to upload them.
+
+# ==========================================
+# Text and RTTM files: KEEP
+# ==========================================
+# Do not ignore *.txt or *.rttm.
+
+# ==========================================
+# Datasets, results, and temporary files
+# Ignore these by default; selectively allow
+# important files below.
+# ==========================================
+*.csv
+*.tsv
+*.json
+*.jsonl
+*.xlsx
+*.xls
+*.parquet
+*.pkl
+*.pickle
+*.joblib
+*.log
+*.tmp
+*.bak
+
+# Allow your model leaderboard CSV
+!testing/dscore-master/model_ranking.csv
+
+# ==========================================
+# Downloaded model runtimes and checkpoints
+# ==========================================
+models_runtime/
+**/models_runtime/
+
+# ==========================================
+# Git metadata and temporary files
+# ==========================================
+*.swp
+*.swo
+*~

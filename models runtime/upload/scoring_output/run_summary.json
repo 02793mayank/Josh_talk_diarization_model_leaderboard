@@ -1,0 +1,55 @@
+{
+  "run_timestamp": "2026-10-19 00:25:55",
+  "project_root": "C:/Users/mrdag/OneDrive/Desktop/Task1 Josh talks",
+  "scoring_version": "1.0.0",
+  "python_version": "3.14.7",
+  "pyannote_core_version": "6.1.0",
+  "pyannote_metrics_version": "4.2.0",
+  "soundfile_version": "0.14.0",
+  "collar_seconds": 0.25,
+  "skip_overlap": false,
+  "uem_policy": "FULL_AUDIO_NO_UEM",
+  "provisional_alignment_enabled": false,
+  "customer_weights": {
+    "call": {
+      "missing": 0.4,
+      "false_alarm": 0.25,
+      "confusion": 0.35
+    },
+    "live_transcription": {
+      "missing": 0.5,
+      "false_alarm": 0.2,
+      "confusion": 0.3
+    },
+    "meeting": {
+      "missing": 0.45,
+      "false_alarm": 0.15,
+      "confusion": 0.4
+    }
+  },
+  "configured_model_count": 10,
+  "configured_models": [
+    "Model1(pyannote Community-1)",
+    "Model2(NVIDIA NeMo Sortformer)",
+    "Model3(NVIDIA NeMo Clustering Diarizer)",
+    "Model4(NVIDIA NeMo Streaming Sortformer)",
+    "Model5(SpeechBrain AMI Diarization)",
+    "Model6(WeSpeaker Diarization)",
+    "Model7(ESPnet Diarization)",
+    "Model8(Kaldi Diarization)",
+    "Model9(UIS-RNN)",
+    "Model10(VBx Diarization)"
+  ],
+  "expected_active_comparisons": 20,
+  "successful_comparisons": 16,
+  "failed_comparisons": 4,
+  "not_evaluated_slots": 30,
+  "completion_status": "PARTIAL",
+  "report_paths": {
+    "call_type_report": "scoring_output/call_type_report.csv",
+    "live_transcription_report": "scoring_output/live_transcription_report.csv",
+    "meeting_report": "scoring_output/meeting_report.csv",
+    "overall_model_report": "scoring_output/overall_model_report.csv"
+  },
+  "error_report_path": "scoring_output/evaluation_errors.csv"
+}

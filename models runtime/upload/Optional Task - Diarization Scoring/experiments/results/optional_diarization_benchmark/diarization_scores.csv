@@ -1,0 +1,10 @@
+recording_id,system_id,system_name,evaluation_status,der_percent,jer_percent,miss_percent,false_alarm_percent,confusion_percent,ref_duration_sec,ref_speech_sec,hyp_speech_sec,notes
+liveTranscription_input02,Model01,pyannote Community-1,VALID,4.99,4.81,1.9,2.63,0.47,139.91,113.20,114.03,Verified VoxConverse recording
+liveTranscription_input02,Model02,NVIDIA NeMo Sortformer (Offline),VALID,3.67,3.57,0.6,3.07,0.0,139.91,113.20,116.00,Verified VoxConverse recording
+liveTranscription_input02,Model04,NVIDIA NeMo Streaming Sortformer,VALID,4.03,3.9,0.74,3.29,0.0,139.91,113.20,116.08,Verified VoxConverse recording
+call_input01,Model01,pyannote Community-1,VALID,86.45,76.99,9.07,51.99,25.39,120.00,66.04,94.67,Verified CALLHOME recording
+call_input01,Model02,NVIDIA NeMo Sortformer (Offline),VALID,74.61,61.63,44.12,27.46,3.02,120.00,66.04,63.91,Verified CALLHOME recording
+call_input01,Model04,NVIDIA NeMo Streaming Sortformer,VALID,76.86,50.89,40.97,31.93,3.96,120.00,66.04,69.43,Verified CALLHOME recording
+call_input02,Model01,pyannote Community-1,INVALID_REFERENCE,,,,,, 120.00,58.31,77.02,Reference timestamps unaligned (+400s offset); excluded from official metrics
+call_input02,Model02,NVIDIA NeMo Sortformer (Offline),INVALID_REFERENCE,,,,,, 120.00,58.31,48.40,Reference timestamps unaligned (+400s offset); excluded from official metrics
+call_input02,Model04,NVIDIA NeMo Streaming Sortformer,INVALID_REFERENCE,,,,,, 120.00,58.31,40.24,Reference timestamps unaligned (+400s offset); excluded from official metrics

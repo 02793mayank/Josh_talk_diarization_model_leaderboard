@@ -1,0 +1,11 @@
+official_overall_rank,model_slot,model_name,evaluation_status,valid_comparisons_count,invalid_comparisons_count,total_comparisons_count,official_macro_der_percent,official_macro_jer_percent,official_macro_miss_percent,official_macro_fa_percent,official_macro_conf_percent,official_custom_score,call_custom_score,live_transcription_custom_score,meeting_custom_score,provisional_macro_der_percent,provisional_custom_score,provisional_rank
+3,1,Model1(pyannote Community-1),PARTIAL,4,1,5,27.87,49.27,5.46,16.38,6.03,91.72,71.99,92.75,99.13,32.19,90.58,1
+1,2,Model2(NVIDIA NeMo Sortformer),PARTIAL,4,1,5,25.30,37.56,8.97,13.45,2.88,92.31,73.74,93.11,99.75,31.11,90.27,3
+4,3,Model3(NVIDIA NeMo Clustering Diarizer),PARTIAL,4,1,5,22.83,48.81,13.20,8.19,1.44,91.21,79.26,90.34,99.60,28.12,89.97,4
+2,4,Model4(NVIDIA NeMo Streaming Sortformer),PARTIAL,4,1,5,26.80,33.61,7.98,15.78,3.04,92.25,73.24,93.07,99.83,31.56,90.41,2
+,5,Model5(SpeechBrain AMI Diarization),NOT_EVALUATED,0,0,5,,,,,,,,,,,,
+,6,Model6(WeSpeaker Diarization),NOT_EVALUATED,0,0,5,,,,,,,,,,,,
+,7,Model7(ESPnet Diarization),NOT_EVALUATED,0,0,5,,,,,,,,,,,,
+,8,Model8(Kaldi Diarization),NOT_EVALUATED,0,0,5,,,,,,,,,,,,
+,9,Model9(UIS-RNN),NOT_EVALUATED,0,0,5,,,,,,,,,,,,
+,10,Model10(VBx Diarization),NOT_EVALUATED,0,0,5,,,,,,,,,,,,

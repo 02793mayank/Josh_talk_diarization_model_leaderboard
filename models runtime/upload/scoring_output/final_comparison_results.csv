@@ -1,0 +1,51 @@
+model_slot,model_name,recording_id,category,audio_duration_sec,evaluation_status,validation_status,DER_percent,JER_percent,missed_speech_percent,false_alarm_percent,speaker_confusion_percent,custom_weighted_error,custom_score,category_rank,provisional_alignment_available,provisional_DER_percent,provisional_JER_percent,provisional_custom_score,hypothesis_file,error_details
+1,Model1(pyannote Community-1),call_input01,call,120.00,SUCCESS,VALID,97.14,78.71,6.30,63.04,27.81,0.28,71.99,4,FALSE,,,,Model1(pyannote Community-1)/hypothesis_rttm/call_input01_Model01.rttm,
+1,Model1(pyannote Community-1),call_input02,call,120.00,INVALID,INVALID_REFERENCE_DURATION,,,,,,,,,TRUE,73.45,45.33,79.68,Model1(pyannote Community-1)/hypothesis_rttm/call_input02_Model01.rttm,Reference speaker duration within scoring region is 0.00s (audio duration: 120.00s)
+1,Model1(pyannote Community-1),liveTranscription_input01,live_transcription,178.69,SUCCESS,VALID,146.16,81.11,33.59,86.32,26.26,0.42,58.07,5,FALSE,,,,Model1(pyannote Community-1)/hypothesis_rttm/liveTranscription_input01_Model01.rttm,
+1,Model1(pyannote Community-1),liveTranscription_input03,live_transcription,60.00,SUCCESS,VALID,3.22,34.76,2.33,0.76,0.12,0.01,98.65,3,FALSE,,,,Model1(pyannote Community-1)/hypothesis_rttm/liveTranscription_input03_Model01.rttm,
+1,Model1(pyannote Community-1),meeting_input,meeting,139.91,SUCCESS,VALID,2.50,2.48,1.33,0.80,0.38,0.01,99.13,4,FALSE,,,,Model1(pyannote Community-1)/hypothesis_rttm/meeting_input_Model01.rttm,
+2,Model2(NVIDIA NeMo Sortformer),call_input01,call,120.00,SUCCESS,VALID,77.89,61.73,44.16,32.05,1.68,0.26,73.74,2,FALSE,,,,Model2(NVIDIA NeMo Sortformer)/hypothesis_rttm/call_input01_Model02.rttm,
+2,Model2(NVIDIA NeMo Sortformer),call_input02,call,120.00,INVALID,INVALID_REFERENCE_DURATION,,,,,,,,,TRUE,86.60,71.10,70.72,Model2(NVIDIA NeMo Sortformer)/hypothesis_rttm/call_input02_Model02.rttm,Reference speaker duration within scoring region is 0.00s (audio duration: 120.00s)
+2,Model2(NVIDIA NeMo Sortformer),liveTranscription_input01,live_transcription,178.69,SUCCESS,VALID,158.17,80.70,32.49,97.01,28.67,0.44,55.75,6,FALSE,,,,Model2(NVIDIA NeMo Sortformer)/hypothesis_rttm/liveTranscription_input01_Model02.rttm,
+2,Model2(NVIDIA NeMo Sortformer),liveTranscription_input03,live_transcription,60.00,SUCCESS,VALID,1.45,6.62,0.81,0.57,0.06,0.01,99.46,2,FALSE,,,,Model2(NVIDIA NeMo Sortformer)/hypothesis_rttm/liveTranscription_input03_Model02.rttm,
+2,Model2(NVIDIA NeMo Sortformer),meeting_input,meeting,139.91,SUCCESS,VALID,1.19,1.18,0.22,0.97,0.00,0.00,99.75,2,FALSE,,,,Model2(NVIDIA NeMo Sortformer)/hypothesis_rttm/meeting_input_Model02.rttm,
+3,Model3(NVIDIA NeMo Clustering Diarizer),call_input01,call,120.00,SUCCESS,VALID,72.18,64.90,16.64,53.52,2.02,0.21,79.26,1,FALSE,,,,Model3(NVIDIA NeMo Clustering Diarizer)/hypothesis_rttm/call_input01_Model03.rttm,
+3,Model3(NVIDIA NeMo Clustering Diarizer),call_input02,call,120.00,INVALID,INVALID_REFERENCE_DURATION,,,,,,,,,TRUE,78.70,48.75,78.12,Model3(NVIDIA NeMo Clustering Diarizer)/hypothesis_rttm/call_input02_Model03.rttm,Reference speaker duration within scoring region is 0.00s (audio duration: 120.00s)
+3,Model3(NVIDIA NeMo Clustering Diarizer),liveTranscription_input01,live_transcription,178.69,SUCCESS,VALID,104.29,91.44,78.58,13.97,11.74,0.46,54.40,8,FALSE,,,,Model3(NVIDIA NeMo Clustering Diarizer)/hypothesis_rttm/liveTranscription_input01_Model03.rttm,
+3,Model3(NVIDIA NeMo Clustering Diarizer),liveTranscription_input03,live_transcription,60.00,SUCCESS,VALID,7.28,37.58,6.91,0.17,0.20,0.04,96.45,4,FALSE,,,,Model3(NVIDIA NeMo Clustering Diarizer)/hypothesis_rttm/liveTranscription_input03_Model03.rttm,
+3,Model3(NVIDIA NeMo Clustering Diarizer),meeting_input,meeting,139.91,SUCCESS,VALID,1.32,1.32,0.66,0.67,0.00,0.00,99.60,3,FALSE,,,,Model3(NVIDIA NeMo Clustering Diarizer)/hypothesis_rttm/meeting_input_Model03.rttm,
+4,Model4(NVIDIA NeMo Streaming Sortformer),call_input01,call,120.00,SUCCESS,VALID,80.67,49.60,42.49,36.03,2.15,0.27,73.24,3,FALSE,,,,Model4(NVIDIA NeMo Streaming Sortformer)/hypothesis_rttm/call_input01_Model04.rttm,
+4,Model4(NVIDIA NeMo Streaming Sortformer),call_input02,call,120.00,INVALID,INVALID_REFERENCE_DURATION,,,,,,,,,TRUE,77.06,67.70,72.88,Model4(NVIDIA NeMo Streaming Sortformer)/hypothesis_rttm/call_input02_Model04.rttm,Reference speaker duration within scoring region is 0.00s (audio duration: 120.00s)
+4,Model4(NVIDIA NeMo Streaming Sortformer),liveTranscription_input01,live_transcription,178.69,SUCCESS,VALID,171.91,79.64,24.57,117.34,29.99,0.45,55.25,7,FALSE,,,,Model4(NVIDIA NeMo Streaming Sortformer)/hypothesis_rttm/liveTranscription_input01_Model04.rttm,
+4,Model4(NVIDIA NeMo Streaming Sortformer),liveTranscription_input03,live_transcription,60.00,SUCCESS,VALID,1.26,4.08,0.81,0.44,0.01,0.00,99.50,1,FALSE,,,,Model4(NVIDIA NeMo Streaming Sortformer)/hypothesis_rttm/liveTranscription_input03_Model04.rttm,
+4,Model4(NVIDIA NeMo Streaming Sortformer),meeting_input,meeting,139.91,SUCCESS,VALID,1.12,1.10,0.00,1.12,0.00,0.00,99.83,1,FALSE,,,,Model4(NVIDIA NeMo Streaming Sortformer)/hypothesis_rttm/meeting_input_Model04.rttm,
+5,Model5(SpeechBrain AMI Diarization),call_input01,call,120.00,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+5,Model5(SpeechBrain AMI Diarization),call_input02,call,120.00,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+5,Model5(SpeechBrain AMI Diarization),liveTranscription_input01,live_transcription,178.69,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+5,Model5(SpeechBrain AMI Diarization),liveTranscription_input03,live_transcription,60.00,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+5,Model5(SpeechBrain AMI Diarization),meeting_input,meeting,139.91,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+6,Model6(WeSpeaker Diarization),call_input01,call,120.00,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+6,Model6(WeSpeaker Diarization),call_input02,call,120.00,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+6,Model6(WeSpeaker Diarization),liveTranscription_input01,live_transcription,178.69,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+6,Model6(WeSpeaker Diarization),liveTranscription_input03,live_transcription,60.00,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+6,Model6(WeSpeaker Diarization),meeting_input,meeting,139.91,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+7,Model7(ESPnet Diarization),call_input01,call,120.00,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+7,Model7(ESPnet Diarization),call_input02,call,120.00,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+7,Model7(ESPnet Diarization),liveTranscription_input01,live_transcription,178.69,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+7,Model7(ESPnet Diarization),liveTranscription_input03,live_transcription,60.00,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+7,Model7(ESPnet Diarization),meeting_input,meeting,139.91,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+8,Model8(Kaldi Diarization),call_input01,call,120.00,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+8,Model8(Kaldi Diarization),call_input02,call,120.00,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+8,Model8(Kaldi Diarization),liveTranscription_input01,live_transcription,178.69,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+8,Model8(Kaldi Diarization),liveTranscription_input03,live_transcription,60.00,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+8,Model8(Kaldi Diarization),meeting_input,meeting,139.91,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+9,Model9(UIS-RNN),call_input01,call,120.00,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+9,Model9(UIS-RNN),call_input02,call,120.00,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+9,Model9(UIS-RNN),liveTranscription_input01,live_transcription,178.69,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+9,Model9(UIS-RNN),liveTranscription_input03,live_transcription,60.00,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+9,Model9(UIS-RNN),meeting_input,meeting,139.91,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+10,Model10(VBx Diarization),call_input01,call,120.00,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+10,Model10(VBx Diarization),call_input02,call,120.00,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+10,Model10(VBx Diarization),liveTranscription_input01,live_transcription,178.69,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+10,Model10(VBx Diarization),liveTranscription_input03,live_transcription,60.00,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.
+10,Model10(VBx Diarization),meeting_input,meeting,139.91,NOT_EVALUATED,RESERVED_MODEL_SLOT,,,,,,,,,FALSE,,,,,Model slot reserved; no hypothesis RTTM generated.

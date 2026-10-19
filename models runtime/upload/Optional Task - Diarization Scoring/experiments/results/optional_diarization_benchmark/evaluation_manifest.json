@@ -1,0 +1,152 @@
+{
+  "benchmark_name": "Optional Speaker Diarization Benchmark",
+  "scoring_engine": "pyannote.metrics 4.2.0 (pyannote.core 6.1.0)",
+  "workspace_root": "C:/Users/mrdag/OneDrive/Desktop/Task1 Josh talks",
+  "canonical_scoring_workspace": "Optional Task - Diarization Scoring",
+  "scoring_parameters": {
+    "collar": 0.0,
+    "skip_overlap": false,
+    "speaker_mapping": "Optimal Hungarian bipartite matching"
+  },
+  "recordings": [
+    {
+      "recording_id": "liveTranscription_input02",
+      "claimed_source": "VoxConverse",
+      "verified_evidence": "Reference URI is 'zvmyn', matching VoxConverse audio clip ID 'zvmyn.wav'. Single speaker broadcast/presentation dialogue.",
+      "audio_relative_path": "Audio and annotations/liveTranscription_inputs_audio/liveTranscription_input02.wav",
+      "reference_rttm_relative_path": "Audio and annotations/liveTranscription_inputs_rttm/liveTranscription_input02.rttm",
+      "duration_seconds": 139.91,
+      "reference_status": "VALID"
+    },
+    {
+      "recording_id": "call_input01",
+      "claimed_source": "CALLHOME",
+      "verified_evidence": "Reference URI is 'LDC97S42', corresponding to LDC CALLHOME American English Speech catalog ID LDC97S42. 3 active speakers (A, A1, B).",
+      "audio_relative_path": "Audio and annotations/call_inputs_audio/call_input01.sph",
+      "reference_rttm_relative_path": "Audio and annotations/call_inputs_rttm/call_input01.rttm",
+      "duration_seconds": 120.00,
+      "reference_status": "VALID"
+    },
+    {
+      "recording_id": "call_input02",
+      "claimed_source": "CALLHOME",
+      "verified_evidence": "Reference URI is 'en_5551', corresponding to CALLHOME English conversation 5551. Reference timestamps span 400.35s to 479.77s (offset by ~400s relative to the 120s excerpt), falling outside audio duration [0.0, 120.0].",
+      "audio_relative_path": "Audio and annotations/call_inputs_audio/call_input02.flac",
+      "reference_rttm_relative_path": "Audio and annotations/call_inputs_rttm/call_input02.rttm",
+      "duration_seconds": 120.00,
+      "reference_status": "INVALID_REFERENCE (Unaligned Timestamp Offset)"
+    }
+  ],
+  "systems": [
+    {
+      "system_id": "Model01",
+      "system_name": "pyannote Community-1",
+      "checkpoint": "pyannote/speaker-diarization-community-1",
+      "library_version": "pyannote.audio 4.0.7",
+      "python_version": "3.11.9",
+      "hypothesis_dir": "Model1(pyannote Community-1)/hypothesis_rttm",
+      "filename_template": "{recording_id}_Model01.rttm"
+    },
+    {
+      "system_id": "Model02",
+      "system_name": "NVIDIA NeMo Sortformer (Offline)",
+      "checkpoint": "nvidia/diar_sortformer_4spk-v1",
+      "library_version": "NeMo 3.0.0",
+      "python_version": "3.11.9",
+      "hypothesis_dir": "Model2(NVIDIA NeMo Sortformer)/hypothesis_rttm",
+      "filename_template": "{recording_id}_Model02.rttm"
+    },
+    {
+      "system_id": "Model04",
+      "system_name": "NVIDIA NeMo Streaming Sortformer",
+      "checkpoint": "nvidia/diar_streaming_sortformer_4spk-v2.1",
+      "library_version": "NeMo 3.0.0",
+      "python_version": "3.11.9",
+      "hypothesis_dir": "Model4(NVIDIA NeMo Streaming Sortformer)/hypothesis_rttm",
+      "filename_template": "{recording_id}_Model04.rttm"
+    }
+  ],
+  "pairs": [
+    {
+      "pair_id": "liveTranscription_input02__Model01",
+      "recording_id": "liveTranscription_input02",
+      "system_id": "Model01",
+      "audio_path": "Audio and annotations/liveTranscription_inputs_audio/liveTranscription_input02.wav",
+      "reference_rttm_path": "Audio and annotations/liveTranscription_inputs_rttm/liveTranscription_input02.rttm",
+      "hypothesis_rttm_path": "Model1(pyannote Community-1)/hypothesis_rttm/liveTranscription_input02_Model01.rttm",
+      "evaluation_status": "VALID"
+    },
+    {
+      "pair_id": "liveTranscription_input02__Model02",
+      "recording_id": "liveTranscription_input02",
+      "system_id": "Model02",
+      "audio_path": "Audio and annotations/liveTranscription_inputs_audio/liveTranscription_input02.wav",
+      "reference_rttm_path": "Audio and annotations/liveTranscription_inputs_rttm/liveTranscription_input02.rttm",
+      "hypothesis_rttm_path": "Model2(NVIDIA NeMo Sortformer)/hypothesis_rttm/liveTranscription_input02_Model02.rttm",
+      "evaluation_status": "VALID"
+    },
+    {
+      "pair_id": "liveTranscription_input02__Model04",
+      "recording_id": "liveTranscription_input02",
+      "system_id": "Model04",
+      "audio_path": "Audio and annotations/liveTranscription_inputs_audio/liveTranscription_input02.wav",
+      "reference_rttm_path": "Audio and annotations/liveTranscription_inputs_rttm/liveTranscription_input02.rttm",
+      "hypothesis_rttm_path": "Model4(NVIDIA NeMo Streaming Sortformer)/hypothesis_rttm/liveTranscription_input02_Model04.rttm",
+      "evaluation_status": "VALID"
+    },
+    {
+      "pair_id": "call_input01__Model01",
+      "recording_id": "call_input01",
+      "system_id": "Model01",
+      "audio_path": "Audio and annotations/call_inputs_audio/call_input01.sph",
+      "reference_rttm_path": "Audio and annotations/call_inputs_rttm/call_input01.rttm",
+      "hypothesis_rttm_path": "Model1(pyannote Community-1)/hypothesis_rttm/call_input01_Model01.rttm",
+      "evaluation_status": "VALID"
+    },
+    {
+      "pair_id": "call_input01__Model02",
+      "recording_id": "call_input01",
+      "system_id": "Model02",
+      "audio_path": "Audio and annotations/call_inputs_audio/call_input01.sph",
+      "reference_rttm_path": "Audio and annotations/call_inputs_rttm/call_input01.rttm",
+      "hypothesis_rttm_path": "Model2(NVIDIA NeMo Sortformer)/hypothesis_rttm/call_input01_Model02.rttm",
+      "evaluation_status": "VALID"
+    },
+    {
+      "pair_id": "call_input01__Model04",
+      "recording_id": "call_input01",
+      "system_id": "Model04",
+      "audio_path": "Audio and annotations/call_inputs_audio/call_input01.sph",
+      "reference_rttm_path": "Audio and annotations/call_inputs_rttm/call_input01.rttm",
+      "hypothesis_rttm_path": "Model4(NVIDIA NeMo Streaming Sortformer)/hypothesis_rttm/call_input01_Model04.rttm",
+      "evaluation_status": "VALID"
+    },
+    {
+      "pair_id": "call_input02__Model01",
+      "recording_id": "call_input02",
+      "system_id": "Model01",
+      "audio_path": "Audio and annotations/call_inputs_audio/call_input02.flac",
+      "reference_rttm_path": "Audio and annotations/call_inputs_rttm/call_input02.rttm",
+      "hypothesis_rttm_path": "Model1(pyannote Community-1)/hypothesis_rttm/call_input02_Model01.rttm",
+      "evaluation_status": "INVALID_REFERENCE (Unaligned Timestamp Offset)"
+    },
+    {
+      "pair_id": "call_input02__Model02",
+      "recording_id": "call_input02",
+      "system_id": "Model02",
+      "audio_path": "Audio and annotations/call_inputs_audio/call_input02.flac",
+      "reference_rttm_path": "Audio and annotations/call_inputs_rttm/call_input02.rttm",
+      "hypothesis_rttm_path": "Model2(NVIDIA NeMo Sortformer)/hypothesis_rttm/call_input02_Model02.rttm",
+      "evaluation_status": "INVALID_REFERENCE (Unaligned Timestamp Offset)"
+    },
+    {
+      "pair_id": "call_input02__Model04",
+      "recording_id": "call_input02",
+      "system_id": "Model04",
+      "audio_path": "Audio and annotations/call_inputs_audio/call_input02.flac",
+      "reference_rttm_path": "Audio and annotations/call_inputs_rttm/call_input02.rttm",
+      "hypothesis_rttm_path": "Model4(NVIDIA NeMo Streaming Sortformer)/hypothesis_rttm/call_input02_Model04.rttm",
+      "evaluation_status": "INVALID_REFERENCE (Unaligned Timestamp Offset)"
+    }
+  ]
+}

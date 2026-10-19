@@ -1,0 +1,218 @@
+{
+  "scoring_config": {
+    "library": "pyannote.metrics 4.2.0 (pyannote.core 6.1.0)",
+    "collar": 0.0,
+    "skip_overlap": false,
+    "speaker_mapping": "Optimal Hungarian bipartite matching"
+  },
+  "recordings": {
+    "liveTranscription_input02": {
+      "source": "VoxConverse",
+      "evidence": "Reference URI is 'zvmyn' (matches VoxConverse clip zvmyn.wav).",
+      "is_valid": true,
+      "duration_sec": 139.91,
+      "ref_path": "Audio and annotations/liveTranscription_inputs_rttm/liveTranscription_input02.rttm",
+      "ref_turns": 21,
+      "ref_speakers": [
+        "spk00"
+      ],
+      "ref_speech_sec": 113.2,
+      "ref_extent_start": 9.44,
+      "ref_extent_end": 135.6
+    },
+    "call_input01": {
+      "source": "CALLHOME",
+      "evidence": "Reference URI is 'LDC97S42' (matches LDC CALLHOME American English Speech catalog ID).",
+      "is_valid": true,
+      "duration_sec": 120.0,
+      "ref_path": "Audio and annotations/call_inputs_rttm/call_input01.rttm",
+      "ref_turns": 58,
+      "ref_speakers": [
+        "A",
+        "A1",
+        "B"
+      ],
+      "ref_speech_sec": 66.04,
+      "ref_extent_start": 7.8,
+      "ref_extent_end": 92.25
+    },
+    "call_input02": {
+      "source": "CALLHOME",
+      "evidence": "Reference URI is 'en_5551', but reference timestamps (400.35s-479.77s) are offset by ~400s outside the 120s audio boundary.",
+      "is_valid": false,
+      "duration_sec": 120.0,
+      "ref_path": "Audio and annotations/call_inputs_rttm/call_input02.rttm",
+      "ref_turns": 49,
+      "ref_speakers": [
+        "A",
+        "B"
+      ],
+      "ref_speech_sec": 58.31,
+      "ref_extent_start": 400.35,
+      "ref_extent_end": 479.77
+    }
+  },
+  "matrix": [
+    {
+      "recording_id": "liveTranscription_input02",
+      "system_id": "Model01",
+      "system_name": "pyannote Community-1",
+      "status": "VALID",
+      "der_percent": 4.99,
+      "jer_percent": 4.81,
+      "components": {
+        "total_ref_speech_sec": 113.2,
+        "miss_sec": 2.147,
+        "fa_sec": 2.973,
+        "confusion_sec": 0.53,
+        "miss_percent": 1.9,
+        "fa_percent": 2.63,
+        "confusion_percent": 0.47
+      },
+      "hyp_speech_sec": 114.025
+    },
+    {
+      "recording_id": "liveTranscription_input02",
+      "system_id": "Model02",
+      "system_name": "NVIDIA NeMo Sortformer (Offline)",
+      "status": "VALID",
+      "der_percent": 3.67,
+      "jer_percent": 3.57,
+      "components": {
+        "total_ref_speech_sec": 113.2,
+        "miss_sec": 0.68,
+        "fa_sec": 3.48,
+        "confusion_sec": 0.0,
+        "miss_percent": 0.6,
+        "fa_percent": 3.07,
+        "confusion_percent": 0.0
+      },
+      "hyp_speech_sec": 116.0
+    },
+    {
+      "recording_id": "liveTranscription_input02",
+      "system_id": "Model04",
+      "system_name": "NVIDIA NeMo Streaming Sortformer",
+      "status": "VALID",
+      "der_percent": 4.03,
+      "jer_percent": 3.9,
+      "components": {
+        "total_ref_speech_sec": 113.2,
+        "miss_sec": 0.84,
+        "fa_sec": 3.72,
+        "confusion_sec": 0.0,
+        "miss_percent": 0.74,
+        "fa_percent": 3.29,
+        "confusion_percent": 0.0
+      },
+      "hyp_speech_sec": 116.08
+    },
+    {
+      "recording_id": "call_input01",
+      "system_id": "Model01",
+      "system_name": "pyannote Community-1",
+      "status": "VALID",
+      "der_percent": 86.45,
+      "jer_percent": 76.99,
+      "components": {
+        "total_ref_speech_sec": 77.74,
+        "miss_sec": 7.052,
+        "fa_sec": 40.415,
+        "confusion_sec": 19.736,
+        "miss_percent": 9.07,
+        "fa_percent": 51.99,
+        "confusion_percent": 25.39
+      },
+      "hyp_speech_sec": 94.669
+    },
+    {
+      "recording_id": "call_input01",
+      "system_id": "Model02",
+      "system_name": "NVIDIA NeMo Sortformer (Offline)",
+      "status": "VALID",
+      "der_percent": 74.61,
+      "jer_percent": 61.63,
+      "components": {
+        "total_ref_speech_sec": 77.74,
+        "miss_sec": 34.3,
+        "fa_sec": 21.35,
+        "confusion_sec": 2.35,
+        "miss_percent": 44.12,
+        "fa_percent": 27.46,
+        "confusion_percent": 3.02
+      },
+      "hyp_speech_sec": 63.91
+    },
+    {
+      "recording_id": "call_input01",
+      "system_id": "Model04",
+      "system_name": "NVIDIA NeMo Streaming Sortformer",
+      "status": "VALID",
+      "der_percent": 76.86,
+      "jer_percent": 50.89,
+      "components": {
+        "total_ref_speech_sec": 77.74,
+        "miss_sec": 31.85,
+        "fa_sec": 24.82,
+        "confusion_sec": 3.08,
+        "miss_percent": 40.97,
+        "fa_percent": 31.93,
+        "confusion_percent": 3.96
+      },
+      "hyp_speech_sec": 69.43
+    },
+    {
+      "recording_id": "call_input02",
+      "system_id": "Model01",
+      "system_name": "pyannote Community-1",
+      "status": "INVALID_REFERENCE",
+      "notes": "Reference timestamps unaligned (+400s offset); excluded from official metrics",
+      "hyp_speech_sec": 77.015,
+      "der_percent": null,
+      "jer_percent": null
+    },
+    {
+      "recording_id": "call_input02",
+      "system_id": "Model02",
+      "system_name": "NVIDIA NeMo Sortformer (Offline)",
+      "status": "INVALID_REFERENCE",
+      "notes": "Reference timestamps unaligned (+400s offset); excluded from official metrics",
+      "hyp_speech_sec": 48.4,
+      "der_percent": null,
+      "jer_percent": null
+    },
+    {
+      "recording_id": "call_input02",
+      "system_id": "Model04",
+      "system_name": "NVIDIA NeMo Streaming Sortformer",
+      "status": "INVALID_REFERENCE",
+      "notes": "Reference timestamps unaligned (+400s offset); excluded from official metrics",
+      "hyp_speech_sec": 40.24,
+      "der_percent": null,
+      "jer_percent": null
+    }
+  ],
+  "valid_aggregates": {
+    "Model01": {
+      "system_name": "pyannote Community-1",
+      "valid_pair_count": 2,
+      "macro_avg_der_percent": 45.72,
+      "macro_avg_jer_percent": 40.9,
+      "micro_avg_der_percent": 38.15
+    },
+    "Model02": {
+      "system_name": "NVIDIA NeMo Sortformer (Offline)",
+      "valid_pair_count": 2,
+      "macro_avg_der_percent": 39.14,
+      "macro_avg_jer_percent": 32.6,
+      "micro_avg_der_percent": 32.55
+    },
+    "Model04": {
+      "system_name": "NVIDIA NeMo Streaming Sortformer",
+      "valid_pair_count": 2,
+      "macro_avg_der_percent": 40.45,
+      "macro_avg_jer_percent": 27.39,
+      "micro_avg_der_percent": 33.68
+    }
+  }
+}

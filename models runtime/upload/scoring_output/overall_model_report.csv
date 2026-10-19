@@ -1,0 +1,11 @@
+overall_rank,model,model_number,expected_recordings,evaluated_recordings,failed_recordings,completion_status,DER,JER,missed_speech_percent,false_alarm_percent,speaker_confusion_percent,custom_weighted_error,custom_score,call_type_DER,call_type_JER,call_type_custom_score,live_transcription_DER,live_transcription_JER,live_transcription_custom_score,meeting_DER,meeting_JER,meeting_custom_score
+1,Model2(NVIDIA NeMo Sortformer),2,5,4,1,PARTIAL,25.30,37.56,8.97,13.45,2.88,0.08,92.31,77.89,61.73,73.74,24.22,43.66,93.11,1.19,1.18,99.75
+2,Model4(NVIDIA NeMo Streaming Sortformer),4,5,4,1,PARTIAL,26.80,33.61,7.98,15.78,3.04,0.08,92.25,80.67,49.60,73.24,26.06,41.86,93.07,1.12,1.10,99.83
+3,Model1(pyannote Community-1),1,5,4,1,PARTIAL,27.87,49.27,5.46,16.38,6.03,0.08,91.72,97.14,78.71,71.99,23.99,57.93,92.75,2.50,2.48,99.13
+4,Model3(NVIDIA NeMo Clustering Diarizer),3,5,4,1,PARTIAL,22.83,48.81,13.20,8.19,1.44,0.09,91.21,72.18,64.90,79.26,21.38,64.51,90.34,1.32,1.32,99.60
+,Model5(SpeechBrain AMI Diarization),5,5,0,5,NOT_EVALUATED,,,,,,,,,,,,,,,,
+,Model6(WeSpeaker Diarization),6,5,0,5,NOT_EVALUATED,,,,,,,,,,,,,,,,
+,Model7(ESPnet Diarization),7,5,0,5,NOT_EVALUATED,,,,,,,,,,,,,,,,
+,Model8(Kaldi Diarization),8,5,0,5,NOT_EVALUATED,,,,,,,,,,,,,,,,
+,Model9(UIS-RNN),9,5,0,5,NOT_EVALUATED,,,,,,,,,,,,,,,,
+,Model10(VBx Diarization),10,5,0,5,NOT_EVALUATED,,,,,,,,,,,,,,,,
