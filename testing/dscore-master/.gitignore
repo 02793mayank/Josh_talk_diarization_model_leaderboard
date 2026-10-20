@@ -100,3 +100,14 @@ models_runtime/
 *.swp
 *.swo
 *~
+# Large audio files
+references/meeting_inputs/*.wav
+@"
+
+# Python virtual environments
+.venv/
+.venv-1/
+
+# Large audio files
+references/meeting_inputs/*.wav
+"@ | Add-Content .gitignore
